@@ -1,0 +1,211 @@
+#total{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+#juego_general{
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    height: 90%;
+    position: absolute;
+    top: 9px;
+    left: 22%;
+    border-radius: 10%;
+    animation-duration: 5s;
+    animation-name: seleción;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    box-shadow: 20px 20px 20px  rgb(103, 255, 1);
+}
+#respuestas{
+    display: flex;
+    position: fixed;
+    top: 70%;
+    left: 30%;
+}
+#ps1{
+    width: 40%;
+    height: 30%;
+    left: 0%;
+    margin: 0%;
+    border-radius: 10%;
+}
+#ps2{
+    width: 30%;
+    height: 30%;
+    left: 10%;
+    margin: 0%;
+    border-radius: 10%;
+}
+#ps3{
+    width: 30%;
+    height: 30%;
+    left: 20%;
+    border-radius: 10%;
+}
+#ps4{
+    width: 30%;
+    height: 30%;
+    left: 35%;
+    margin: 0%;
+    border-radius: 10%;
+}
+#ps4:hover{
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-name: seleción;
+    animation-timing-function: linear;
+    -webkit-transform: scale(1.2); transform: scale(1.2);
+}
+#ps3:hover{
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-name: seleción;
+    animation-timing-function: linear;
+    -webkit-transform: scale(1.2); transform: scale(1.2);
+} 
+#ps2:hover{
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-name: seleción;
+    animation-timing-function: linear;
+    -webkit-transform: scale(1.2); transform: scale(1.2);
+}
+#ps1:hover{
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-name: seleción;
+    animation-timing-function: linear;
+    -webkit-transform: scale(1.2); transform: scale(1.2);
+} 
+#imagen1{
+    display: none;
+    position: relative;
+    top: 85%;
+    left: 17%;
+    width: 10%;
+    height: 10%;
+}
+#imagen2{
+    display: none;
+    position: relative;
+    top: 85%;
+    left: 37%;
+    width: 10%;
+    height: 10%;
+}#imagen3{
+    display: none;
+    position: relative;
+    top: 85%;
+    left: 55%;
+    width: 10%;
+    height: 10%;
+}#imagen4{
+    display: none;
+    position: relative;
+    top: 86%;
+    left: 77%;
+    width: 10%;
+    height: 10%;
+}
+@keyframes seleción {
+    0%{
+      border-top-color: rgb(0, 204, 255);
+    border-bottom-color: rgb(0, 204, 255);
+    border-left-color:rgb(255, 255, 255);
+    border-right-color:rgb(255, 255, 255);
+    box-shadow: rgb(136, 255, 0) 10px 10px 10px;
+    }
+    25%{
+      border-top-color: rgb(255, 255, 255);
+      border-bottom-color: rgb(255, 255, 255);
+      border-left-color:rgb(0, 204, 255);
+      border-right-color:rgb(255, 251, 0);
+      box-shadow: rgb(238, 255, 0) 10px 10px 10px;
+    }
+    50%{
+      border-top-color: rgb(255, 0, 0);
+      border-bottom-color: rgb(0, 204, 255);
+      border-left-color:rgb(255, 255, 255);
+      border-right-color:rgb(255, 255, 255);
+      box-shadow: rgb(4, 0, 255) 10px 10px 10px;
+    }
+    75%{
+      border-top-color: rgb(255, 255, 255);
+      border-bottom-color: rgb(255, 255, 255);
+      border-left-color:rgb(0, 204, 255);
+      border-right-color:rgb(0, 204, 255);
+      box-shadow: rgb(174, 0, 255)10px 10px 10px;
+    }
+    100%{
+      border-top-color: rgb(0, 204, 255);
+      border-bottom-color: rgb(0, 204, 255);
+      border-left-color:rgb(255, 255, 255);
+      border-right-color:rgb(255, 255, 255);
+      box-shadow: rgb(136, 255, 0) 10px 10px 10px;
+    }
+  }
+  #logo{
+      position: absolute;
+      width: 15%;
+      height: 30%;
+  }
+  #logo2{
+    position: absolute;
+    left: 85%;
+    width: 15%;
+    height: 30%;
+}
+@keyframes ani-cuadrado {
+    0%{
+        
+    }
+    20%{ 
+        
+        transform: rotate(45deg);
+        background-color: blue;
+    }
+    40%{
+        
+        transform: rotate(60deg);
+        background-color: rgb(251, 255, 0);
+    }
+    60%{
+        
+        transform: rotate(120deg);
+        background-color: rgb(0, 247, 255);
+    }
+    80%{
+        transition: all 5s ease;
+        transform: rotate(300deg);
+        background-color: rgb(94, 255, 0);
+    }
+    100%{
+        
+        transform: rotate(360deg);
+        background-color: rgb(174, 0, 255);
+    }
+}
+#cuadrado{
+    position: absolute;
+    top: 88%;
+    left: 0%;
+    width: 10%;
+    height: 13%;
+    border-radius: 10%;
+    background-color: blue;
+    animation-name: ani-cuadrado;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#co2{
+    position:absolute;
+    left: 25%;
+    top: 10%;
+    width: 600px;
+    height: 500px;
+    border-radius: 10%;
+    box-shadow: 10px 10px 10px rgb(112, 112, 112);
+}

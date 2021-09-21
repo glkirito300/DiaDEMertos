@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videoaltar</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body id="total">
+            <img src="logo_2.gif" id="logo">
+            <div id="juego_general" >
+                <img src="https://img.icons8.com/fluency/48/000000/day-of-the-dead.png" id="imagen1">
+                <img src="https://img.icons8.com/fluency/48/000000/day-of-the-dead.png" id="imagen2">
+                <img src="https://img.icons8.com/fluency/48/000000/day-of-the-dead.png" id="imagen3">
+                <img src="https://img.icons8.com/fluency/48/000000/day-of-the-dead.png" id="imagen4">
+                <div id="cuadrado"></div>
+                <div id="respuestas">
+                    <button class="waves-effect waves-light btn"  id="ps1" type="button"  onmouseover="ponerimagen(1)"  onclick="hablar(1)" onmouseout="quitarimagen(1)">respuestas1</button>
+                    <button class="waves-effect waves-light btn" id="ps2"  type="button"  onmouseover="ponerimagen(2)"  onclick="hablar(2)"onmouseout="quitarimagen(2)">Respuesta2</button>
+                    <button class="waves-effect waves-light btn" id="ps3"  type="button" onmouseover="ponerimagen(3)" onclick="hablar(3)" onmouseout="quitarimagen(3)">Respuesta3</button>
+                    <button class="waves-effect waves-light btn" id="ps4"  type="button" onmouseover="ponerimagen(4)" onclick="hablar(4)" onmouseout="quitarimagen(4)">Repetir</button>
+                </div>
+            </div> 
+    <script src="scripts.js"></script>
+</body>
+</html>
