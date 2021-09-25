@@ -8,16 +8,16 @@
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="icon" href="https://img.icons8.com/clouds/100/000000/day-of-the-dead.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Dia de Muertos</title>
 </head>
-<body>
+<body id="imagen">
+  <!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT4c9vpLqciQvuroHuc3XcM25ZW9ujYsJFtLmL31ig50Ug8fshglK600tpz_5PUKUKtJT-BXM1atIcy/embed?start=true&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
     <div id="co2">
-        <div class="row">
-            <div class="input-field col s6">
-              <input value="Alvin" id="first_name2" type="text" class="validate">
-              <label class="active" for="first_name2">First Name</label>
-            </div>
-          </div>
+      <h1 id="titulo_c02" class="animate__animated animate__rubberBand">Altar virtual</h1>
+      <input placeholder="Escribe tu nombre aqui" id="nombre" type="text" onmouseover="comentar(1)" onmouseout="comentar(0)" >
+      <button type="button" id="iniciar" onclick="iniciar();location.href='alebrije.html'">Iniciar</button>
     </div>
     <script src="scripts.js"></script>
 </body>

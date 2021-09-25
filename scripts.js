@@ -43,4 +43,15 @@ if (numero == 1){
     speechSynthesis.speak(new SpeechSynthesisUtterance("en un momento repetire la información"))
 }
 }
-      
+var titulo = document.getElementById("titulo_c02");
+function comentar(numero){
+    if(numero == 1){
+        titulo.innerHTML = "Escribe"
+    }else if(numero == 0){
+        titulo.innerHTML = "Altar virtual"
+    }
+}
+function iniciar(){
+    var nombre_persona = document.getElementById("nombre").value;
+    speechSynthesis.speak(new SpeechSynthesisUtterance("Bienvenido o bienvenido"+nombre_persona + "te quiero contar una historia"))
+}

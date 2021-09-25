@@ -1,70 +1,123 @@
-#total{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: black;
+.vanishIn {
+  -webkit-animation-name: vanishIn;
+          animation-name: vanishIn;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+@-webkit-keyframes vanishIn {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(2, 2);
+            transform: scale(2, 2);
+    -webkit-filter: blur(90px);
+            filter: blur(90px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}
+
+@keyframes vanishIn {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(2, 2);
+            transform: scale(2, 2);
+    -webkit-filter: blur(90px);
+            filter: blur(90px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
 }
 #juego_general{
-    background-color: rgb(255, 255, 255);
-    width: 60%;
-    height: 90%;
-    position: absolute;
-    top: 9px;
-    left: 22%;
-    border-radius: 10%;
-    animation-duration: 5s;
-    animation-name: seleción;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    box-shadow: 20px 20px 20px  rgb(103, 255, 1);
+  background-color: rgb(255, 255, 255);
+  width: 60%;
+  height: 90%;
+  position: absolute;
+  top: 9px;
+  left: 22%;
+  border-radius: 10%;
+  animation-duration: 5s;
+  animation-name: seleción;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  box-shadow: 20px 20px 20px  rgb(103, 255, 1);
 }
 #respuestas{
-    display: flex;
-    position: fixed;
-    top: 70%;
-    left: 30%;
+  display: flex;
+  position: fixed;
+  top: 70%;
+  left: 30%;
 }
-#ps1{
-    width: 40%;
-    height: 30%;
-    left: 0%;
-    margin: 0%;
-    border-radius: 10%;
-}
-#ps2{
-    width: 30%;
-    height: 30%;
-    left: 10%;
-    margin: 0%;
-    border-radius: 10%;
-}
-#ps3{
-    width: 30%;
-    height: 30%;
-    left: 20%;
-    border-radius: 10%;
-}
-#ps4{
-    width: 30%;
-    height: 30%;
-    left: 35%;
-    margin: 0%;
-    border-radius: 10%;
-}
-#ps4:hover{
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-    animation-name: seleción;
-    animation-timing-function: linear;
-    -webkit-transform: scale(1.2); transform: scale(1.2);
-}
-#ps3:hover{
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-    animation-name: seleción;
+#seleción{
     animation-timing-function: linear;
     -webkit-transform: scale(1.2); transform: scale(1.2);
 } 
+#ps1{
+  width: 40%;
+  height: 30%;
+  left: 0%;
+  margin: 0%;
+  border-radius: 10%;
+}
+#ps1:hover{
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-name: seleción;
+  animation-timing-function: linear;
+  -webkit-transform: scale(1.2); transform: scale(1.2);
+}
+#ps2{
+  width: 30%;
+  height: 30%;
+  left: 10%;
+  margin: 0%;
+  border-radius: 10%;
+}
+#ps2:hover{
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-name: seleción;
+  animation-timing-function: linear;
+  -webkit-transform: scale(1.2); transform: scale(1.2);
+}
+#ps3{
+  width: 30%;
+  height: 30%;
+  left: 20%;
+  border-radius: 10%;
+}
+#ps3:hover{
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-name: seleción;
+  animation-timing-function: linear;
+  -webkit-transform: scale(1.2); transform: scale(1.2);
+} 
+#ps4{
+  width: 30%;
+  height: 30%;
+  left: 35%;
+  margin: 0%;
+  border-radius: 10%;
+}
 #ps2:hover{
     animation-iteration-count: infinite;
     animation-duration: 5s;
@@ -204,8 +257,144 @@
     position:absolute;
     left: 25%;
     top: 10%;
-    width: 600px;
-    height: 500px;
+    width: 50%;
+    height: 80%;
     border-radius: 10%;
-    box-shadow: 10px 10px 10px rgb(112, 112, 112);
+    box-shadow: 10px 10px 10px rgb(170, 165, 165);
+    background-color: rgba(255, 255, 255, 0.829);
+    transition: all 5s ease;
 }
+#co2:hover{
+    -webkit-transform: scale(1.1);transform: scale(1.1);
+    transition: all 5s ease;
+    background-color: black;
+    box-shadow: 10px 10px 10px rgb(255, 255, 255);
+}
+#nombre{
+    font-size: 200%;
+    position: absolute;
+    top: 40%;
+    left: 16%;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom-color: turquoise;
+    outline: none;
+    width: 70%;
+    background-color: transparent;
+}
+#nombre:hover{
+    -webkit-transform: scale(1.1);transform: scale(1.1);
+    color: white;
+}
+#titulo_c02{
+    font-family: 'Yusei Magic', sans-serif;
+    text-align: center;
+    color: rgb(109, 109, 109);
+    animation-name: cambio_color_texto;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes cambio_color_texto {
+    
+    0% {
+      
+      color: blue;
+    }
+    
+    10% {
+      
+      color: #8e44ad;
+    }
+    
+    20% {
+      
+      color: #1abc9c;
+    }
+    
+    30% {
+      
+      color: #d35400;
+    }
+    
+    40% {
+      
+      color: blue;
+    }
+    
+    50% {
+      
+      color: #34495e;
+    }
+    
+    60% {
+      
+      color: blue;
+    }
+    
+    70% {
+      
+      color: #2980b9;
+    }
+    80% {
+   
+      color: #f1c40f;
+    }
+    
+    90% {
+   
+      color: #2980b9;
+    }
+    
+    100% {
+      
+      color: pink;
+    }
+  }
+  #imagen{
+    background-color: rgba(0,0,0,0.8);
+    background-image:url(https://www.gob.mx/cms/uploads/article/main_image/101502/16-16.jpg);
+    background-size: cover;
+    height: 500px;
+    max-width: 100%;
+  }
+  #iniciar{
+      position: absolute;
+      top: 70%;
+      left: 40%;
+      width: 16%;
+      height: 20%;
+      outline: none;
+      border-radius: 49%;
+      font-size: 100%;
+      background-color: darkorange;
+      border-color: black;
+  }
+  #iniciar:hover{
+      -webkit-transform: scale(1.1);transform: scale(1.1);
+  }
+  #fondo{
+      background-image: url(https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_960_720.jpg);
+      background-size: cover;
+  }
+  #todo{
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+      
+  }
+  #alebrije{
+    position: relative;
+    left: 30%;
+    width: 40%;
+    height: 40%;
+  }
+  #ojo1{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 50%;
+    bottom: 120px;
+    background-color: yellow;
+  }
+/*# sourceMappingURL=estilos.css.map */
