@@ -8,13 +8,6 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body id="fondo">
-    <div id="todo">
-        <img id="alebrije" src="alebrije_sin_fondo.png">
-        <div id="ojo1"></div>
-        <div id="ojo2"></div>
-        <img id="ojo_movediso_1" src="https://media.baamboozle.com/uploads/images/9175/1615914949_112600_gif-url.gif" alt="ojos_movedisos">
-        <img id="ojo_movediso_2" src="https://media.baamboozle.com/uploads/images/9175/1615914949_112600_gif-url.gif" alt="ojos_movedisos">
-    </div>
     <div class="container">
 
         <div class="rain">
@@ -153,6 +146,17 @@
         </div>
     
     </div>
+    <div id="todo">
+        <img id="alebrije" src="alebrije_sin_fondo.png">
+        <button id="ojo1" onclick="desactivar()" ></button>
+        <div id="ojo2"></div>
+        <img id="ojo_movediso_1" src="https://media.baamboozle.com/uploads/images/9175/1615914949_112600_gif-url.gif" alt="ojos_movedisos">
+        <img id="ojo_movediso_2" src="https://media.baamboozle.com/uploads/images/9175/1615914949_112600_gif-url.gif" alt="ojos_movedisos">
+    </div>
+    <button id="boton1" onmouseover="mover(1)">¿que son los alebrijes?</button>
+    <button id="boton2" onmouseover="mover(2)" onmouseout="regresar(2)" >¿que es la catrina?</button>
+    <button id="boton3" onmouseover="mover(3)" onmouseout="regresar(3)" >¿que es el día de muertos?</button>
+    <button id="boton4" onmouseover="mover(4)" onmouseout="regresar(4)" >¿cual es la flor que se usa?</button>
     <script src="scripts.js"></script>
 </body>
 </html>
