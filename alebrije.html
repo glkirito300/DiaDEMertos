@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alebrije</title>
     <link rel="stylesheet" href="estilos.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
 </head>
 <body id="fondo">
     <div class="container">
@@ -153,10 +156,12 @@
         <img id="ojo_movediso_1" src="https://media.baamboozle.com/uploads/images/9175/1615914949_112600_gif-url.gif" alt="ojos_movedisos">
         <img id="ojo_movediso_2" src="https://media.baamboozle.com/uploads/images/9175/1615914949_112600_gif-url.gif" alt="ojos_movedisos">
     </div>
-    <button id="boton1" onmouseover="mover(1)">¿que son los alebrijes?</button>
-    <button id="boton2" onmouseover="mover(2)" onmouseout="regresar(2)" >¿que es la catrina?</button>
-    <button id="boton3" onmouseover="mover(3)" onmouseout="regresar(3)" >¿que es el día de muertos?</button>
-    <button id="boton4" onmouseover="mover(4)" onmouseout="regresar(4)" >¿cual es la flor que se usa?</button>
+    <audio id="sonido" src="" autoplay  onended="regresar_sonido_fondo()"></audio>
+    <button id="boton1" onclick="hablar_pregunta(1)" onmouseover="mover(1)" onmouseout="regresar(1)"  >¿que son los alebrijes?</button>
+    <button id="boton2" onclick="hablar_pregunta(2)" onmouseover="mover(2)" onmouseout="regresar(2)" >¿que es la catrina?</button>
+    <button id="boton3" onclick="hablar_pregunta(3)" onmouseover="mover(3)" onmouseout="regresar(3)" >¿que es el día de muertos?</button>
+    <button id="boton4" onclick="hablar_pregunta(4)" onmouseover="mover(4)" onmouseout="regresar(4)" >¿cual es la flor que se usa?</button>
+    <div id="contador"></div>
     <script src="scripts.js"></script>
 </body>
 </html>

@@ -19,6 +19,20 @@
       <input placeholder="Escribe tu nombre aqui" id="nombre" type="text" onmouseover="comentar(1)" onmouseout="comentar(0)" >
       <button type="button" id="iniciar" onclick="iniciar();location.href='alebrije.html'">Iniciar</button>
     </div>
+    <div class="contenedor_video" id="cont_video_iframe">
+ 
+      <!-- Subcontenedor del video -->
+      <div class="video" id="video_div">
+     
+        <!-- Botón para cerrar el video flotante -->
+        <button class="btn_cerrar" onclick="quitar_video()" title="Da click aqui para cerrar el video"> x </button>
+     
+        <!-- Elemento Video HTML 5 -->
+        <iframe src="https://drive.google.com/file/d/1vu7Hgj11ICpMS_edGxJcSMo99PbQtiRI/preview" class="vid" controls></iframe> 
+                      
+      </div>
+     
+    </div>
     <script src="scripts.js"></script>
 </body>
 </html>
