@@ -886,3 +886,17 @@
 .cont_video_iframe{
   animation-duration: 7s;
 }
+#tap_or{
+  position: absolute;
+  top: 1.5%;
+  width: 30%;
+  height: 6%;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+#texto{
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
