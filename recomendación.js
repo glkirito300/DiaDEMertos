@@ -1,0 +1,1 @@
+alert("Bienvenido, Se recomienda utilizar la pagina en computadora de escritorio o laptop.");

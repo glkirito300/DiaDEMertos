@@ -902,11 +902,16 @@
 }
 /* responsive Para 960px */  
 @media only screen and (max-width: 980px) and (min-width: 821px) {
-  
+  #btn1_3{
+    top: 93%;
+    left: 70%;
+    width: 30%;
+    height: 7%;
+  }
 }  
  
 /* responsive Para 800px */  
-@media only screen and (max-width: 820px) and (min-width: 621px) and (max-height: 1300px) {  
+@media only screen and (max-width: 820px) and (min-width: 621px){  
   #co2{
     width: 90%;
     height: 60%;
@@ -927,6 +932,12 @@
     width: 15%;
     background-color: red;
   }
+  #btn1_3{
+    top: 93%;
+    left: 70%;
+    width: 30%;
+    height: 7%;
+  }
 }  
   
 /* responsive Para 600px */  
@@ -944,6 +955,12 @@
   .btn_cerrar{
     position: absolute;
     top: 0%;
+  }
+  #btn1_3{
+    top: 93%;
+    left: 70%;
+    width: 30%;
+    height: 7%;
   }
 }  
 /* responsive Para 480px */  
@@ -965,7 +982,12 @@
     width: 10%;
     height: 5%;
   }
-
+  #btn1_3{
+    top: 93%;
+    left: 70%;
+    width: 30%;
+    height: 7%;
+  }
 }  
 /* responsive Para 320px */  
 @media only screen and (max-width: 340px) and (min-width: 280px)  {  
@@ -988,6 +1010,12 @@
     left: 0%;
     background-color: red;
   }
+  #btn1_3{
+    top: 93%;
+    left: 70%;
+    width: 30%;
+    height: 7%;
+  }
 }
 @media only screen and (max-width:279px) and (min-width:5px) {
   #co2{
@@ -1008,5 +1036,16 @@
     top: 35%;
     background-color: red;
   }
-  
+  #alebrije{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 30%;
+    left: 20%;
+  }
+  #btn1_3{
+    top: 98%;
+    left: 70%;
+    width: 40%;
+  }
 }

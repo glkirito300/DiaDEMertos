@@ -54,7 +54,13 @@ function comentar(numero){
 }
 function iniciar(){
     var nombre_persona = document.getElementById("nombre").value;
+    if(screen.width >1023){
     speechSynthesis.speak(new SpeechSynthesisUtterance("Bienvenido o bienvenido"+nombre_persona + "en este apartado de ayudare a entender mejor el altar de muertos, en esta parte de la pagina hay 4 botones que te diran información sin embargo, hay una trampa y una solución que desactiva la trampa, te dare una pista, siempre esta en ti necesitas de el para vivir, e incluso haces todo con el" + "tiene 30 segundos para desactivar la trampa, de lo contrario pierde, suerte usted puede"))
+    window.location.href = "alebrije.html";
+    } else{
+        window.location.href = "presentación.html";
+        speechSynthesis.speak(new SpeechSynthesisUtterance("Bienvenido o bienvenida" +nombre_persona))
+    }
 }
 var boton1_de_mover = document.getElementById("boton1")
 var boton2_de_mover = document.getElementById("boton2")
