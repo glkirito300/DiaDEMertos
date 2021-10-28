@@ -900,3 +900,113 @@
   top: 30%;
   left: 30%;
 }
+/* responsive Para 960px */  
+@media only screen and (max-width: 980px) and (min-width: 821px) {
+  
+}  
+ 
+/* responsive Para 800px */  
+@media only screen and (max-width: 820px) and (min-width: 621px) and (max-height: 1300px) {  
+  #co2{
+    width: 90%;
+    height: 60%;
+    left: 5%;
+  }
+  .vid{
+    position: absolute;
+    width: 130%;
+    height: 80%;
+    top: 5%;
+    left: -17%;
+  }
+  .btn_cerrar{
+    position: absolute;
+    bottom: 95%;
+    left: -8%;
+    font-size: 300%;
+    width: 15%;
+    background-color: red;
+  }
+}  
+  
+/* responsive Para 600px */  
+@media only screen and (max-width: 620px) and (min-width: 501px) {  
+  #co2{
+    width: 90%;
+    height: 80%;
+    left: 5%;
+  }
+  .vid{
+    position: absolute;
+    width: 500px;
+    left: -33%;
+  }
+  .btn_cerrar{
+    position: absolute;
+    top: 0%;
+  }
+}  
+/* responsive Para 480px */  
+@media only screen and (max-width: 500px) and (min-width: 341px) {  
+  #co2{
+    width: 90%;
+    height: 60%;
+    left: 5%;
+  }
+  .vid{
+    position: absolute;
+    width: 310px;
+    height: 70%;
+    top: 5%;
+    left: -30%;
+  }
+  .btn_cerrar{
+    background-color: red;
+    width: 10%;
+    height: 5%;
+  }
+
+}  
+/* responsive Para 320px */  
+@media only screen and (max-width: 340px) and (min-width: 280px)  {  
+  #co2{
+    top: 20%;
+    left: 5%;
+    width: 90%;
+    height: 60%;
+  }
+  .vid{
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    width: 130%;
+    height: 70%;
+  }
+  .btn_cerrar{
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    background-color: red;
+  }
+}
+@media only screen and (max-width:279px) and (min-width:5px) {
+  #co2{
+    width: 80%;
+    height: 30%;
+    left: 10%;
+    top: 35%;
+  }
+  .vid{
+    width: 90%;
+    height: 30%;
+    position: absolute;
+    left: 5%;
+    bottom: 30%;
+  }
+  .btn_cerrar{
+    position: absolute;
+    top: 35%;
+    background-color: red;
+  }
+  
+}
